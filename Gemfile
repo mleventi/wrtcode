@@ -7,6 +7,7 @@ gem 'rails', '3.0.5'
 
 gem 'sqlite3'
 gem 'haml'
+gem 'hassle', :git => 'git://github.com/koppen/hassle.git'
 
 # Use unicorn as the web server
 # gem 'unicorn'
