@@ -1,4 +1,8 @@
 Wrtcode::Application.routes.draw do
+  constraints(:host => /^wrtcode.com/) do
+    root :to => redirect("http://www.wrtcode.com")
+    match '/*path', :to => redirect {|params| "http://www.wrtcode.com/#{params[:path]}"}
+  end
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
